@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Hello World | Hexo</title>
+  <title itemprop="name">Hexo</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -317,85 +317,28 @@
   </div>
 </header>
 
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
-<div class="pattern-center-blank"></div>
+        <div class="pattern-center-blank"></div>
+  
+  <div id="content" class="site-content">
+    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+      <h1 id="Hexo-零基础搭建个人博客"><a href="#Hexo-零基础搭建个人博客" class="headerlink" title="Hexo-零基础搭建个人博客"></a>Hexo-零基础搭建个人博客</h1><p>一、环境准备<br>1、安装Node.js<br>直接到官网上下载安装即可<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+<p>Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)<br>Node自带npm<br>2、安装Git<br>Windows：下载并安装 git.<br>Mac：使用 Homebrew, MacPorts 或者下载 安装程序。<br>Linux (Ubuntu, Debian)：sudo apt-get install git-core<br>Linux (Fedora, Red Hat, CentOS)：sudo yum install git-core<br><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn/img/js.png"></p>
+<p>npm下载慢的话也可以下载淘宝下载源cnpm</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-          <header class="entry-header">
-            <h1 class="entry-title">Hello World</h1>
-            <p class="entry-census">&nbsp;·&nbsp;2023-11-25&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+<h3 id="二、开始安装Hexo"><a href="#二、开始安装Hexo" class="headerlink" title="二、开始安装Hexo"></a>二、开始安装Hexo</h3><h4 id="1、安装hexo"><a href="#1、安装hexo" class="headerlink" title="1、安装hexo"></a>1、安装hexo</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">或者</span><br><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-            <hr>
-          </header>
-        
-        <div class="entry-content">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>安装完成可输入hexo -v查看版本</p>
+<h4 id="2、初始化hexo，新建存储博客的文件夹"><a href="#2、初始化hexo，新建存储博客的文件夹" class="headerlink" title="2、初始化hexo，新建存储博客的文件夹"></a>2、初始化hexo，新建存储博客的文件夹</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="3、进入文件夹，安装一下npm"><a href="#3、进入文件夹，安装一下npm" class="headerlink" title="3、进入文件夹，安装一下npm"></a>3、进入文件夹，安装一下npm</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn/img/js(2).png"></p>
+<h4 id="4、启动服务站点"><a href="#4、启动服务站点" class="headerlink" title="4、启动服务站点"></a>4、启动服务站点</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 至此hero就搭建好了。可以在本地访问了</p>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn@main/img/zfb.png"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn@main/img/wxzf.jpg"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre full previous">
-          
-            <a href="/2023/12/05/java/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                JAVA简介</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-      </section>
+      <!-- .entry-content -->
       
 <div id="vcomments"></div>
 <script>
@@ -414,25 +357,43 @@
 
 
 
+      <div class="single-reward">
+        <div class="reward-open">赏
+          <div class="reward-main">
+            <ul class="reward-row">
+              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn@main/img/zfb.png"></li>
+              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn@main/img/wxzf.jpg"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+      <footer class="post-footer">
+        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+        <div class="post-tags">
+        </div>
+        <div class="post-share">
+          <div class="social-share sharehidden share-component"></div>
+          <i class="iconfont show-share icon-forward"></i>
+        </div>
+      </footer><!-- .entry-footer -->
+    </article>
+      <!-- #post-## -->
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/ZhanQiuszb/cdn@main/img/avatar.jpg" itemprop="image" alt="私人博客" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="" itemprop="url" rel="author"></a>
+            <a href="" itemprop="url" rel="author">私人博客</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i></p>
+        <p><i class="iconfont icon-write"></i>Zhan Qiu welcomes everyone to watch Zhan Qiu's private blog ！</p>
       </section>
-    </main><!-- #main -->
   </div><!-- #primary -->
 </div>
-
-
-
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

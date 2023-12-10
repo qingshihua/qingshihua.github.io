@@ -22,23 +22,23 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "Hi, Handsome guys and beauties👋"
+        content: "Hello, my name is qingshuhua.👋"
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 战秋の私人博客"
+            content: "这里是 清风一刻的无话不说博客"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
-                content: "一个在读大专生~"
+                content: "I come from the next 20 thousand years."
             }).then(function () {
                 botui.action.button({
                     delay: 1600,
                     action: [{
-                        text: "然后呢？ 😃",
+                        text: "然后呢？ 😒😒😒🍭",
                         value: "sure"
                     }, {
-                        text: "少废话！ 🙄",
+                        text: "少说话！🤬🤬🤬 ",
                         value: "skip"
                     }]
                 }).then(function (a) {
@@ -51,7 +51,7 @@ function bot_ui_ini() {
     var sure = function () {
             botui.message.add({
                 delay: 600,
-                content: "😘"
+                content: "In the future, the earth will experience an unprecedented destruction."
             }).then(function () {
                 secondpart()
             })
@@ -65,32 +65,32 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于汕头职业技术学院"
+                content: "You will be the nephew of fate. I hope you can stop this great crisis."
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "向往计算机技术却被学历耽误，但后来喜欢上了室内设计…"
+                    content: "现在我只是一道未来虚影"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "因为计算机工作也太多人内卷了嘛"
+                        content: "只能传输给你未来计算机知识及水平"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "主攻 Java 语言，偶尔也折腾 HTML/CSS/JavaScript/PHP"
+                            content: "其他的我是没办法传输给你了"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "研究的方向，是 后端编程开发技术（Back-end development technology）以及编程理论学习（Learning of programming theory）"
+                                content: "希望在我能量耗尽之前"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "喜欢计算机，希望有一天能够被称为计算机大佬"
+                                    content: "你能拯救世界于水火之中"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
                                         action: [{
-                                            text: "为什么叫战秋呢？ 🤔",
+                                            text: "能力传输完成！",
                                             value: "why-mashiro"
                                         }]
                                     }).then(function (a) {
@@ -106,12 +106,12 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为我之前玩游戏的时候，一直想不到取什么名字，最后就取了战秋，当时一起玩游戏的网友也说我这个名字好看，随后我大多数需要的取网名的地方都取名“战秋“了~"
+                content: "后续会经历一场史无前例的大地震"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "为什么会做这个博客呢？ 🤔",
+                        text: "会有远古巨兽复苏",
                         value: "why-cat"
                     }]
                 }).then(function (a) {
@@ -122,16 +122,16 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为学校需要我们完成毕业设计… "
+                content: "你得提前做好准备"
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "所以我想了很久，才决定来做博客类型的毕业设计！"
+                    content: "再给你一份未来礼物"
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
                         action: [{
-                            text: "以后还会持续更新博客吗？(ง •_•)ง",
+                            text: "这道光是(ง •_•)ง",
                             value: "why-domain"
                         }]
                     }).then(function (a) {
@@ -143,11 +143,11 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "emmmm，看以后还需不需要用到博客吧！需要用到应该就会更新！！！"
+                content: "这是迪迦的变身器！！！"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
+                    content: "卧，谢谢听我废话一文 ^_^"
                 })
             })
         } 
